@@ -5,7 +5,7 @@
             "name": "Play",
             "type": "coreclr",
             "request": "launch",
-            // "preLaunchTask": "build",
+            "preLaunchTask": "build",
             "program": "C:\\Users\\sam\\Documents\\Godot_v4.4.1-stable_mono_win64\\Godot_v4.4.1-stable_mono_win64.exe",
             "args": [],
             "cwd": "${workspaceFolder}",

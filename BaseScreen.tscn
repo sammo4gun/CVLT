@@ -1,6 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://dpato3wdlg2ef"]
+[gd_scene load_steps=4 format=3 uid="uid://dpato3wdlg2ef"]
 
 [ext_resource type="Script" uid="uid://dep2akf0hccgw" path="res://scripts/BaseScreen.cs" id="1_8la18"]
+[ext_resource type="PackedScene" uid="uid://dh0wpdocj6jr4" path="res://World.tscn" id="2_4i0gp"]
+[ext_resource type="PackedScene" uid="uid://gmlf4ctwa7b8" path="res://Individual.tscn" id="3_4hw2r"]
 
 [node name="BaseScreen" type="Node2D"]
 script = ExtResource("1_8la18")
+
+[node name="World" parent="." instance=ExtResource("2_4i0gp")]
+
+[node name="Individual" parent="World" instance=ExtResource("3_4hw2r")]
